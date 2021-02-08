@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABE3920FB7D240C3FF4A0EA1 /* Pods_ios_dca_calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B5CF22C8596658EA14B554F /* Pods_ios_dca_calculator.framework */; };
+		CB2A2E1F25D0C96E00D9FE48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A2E1E25D0C96E00D9FE48 /* AppDelegate.swift */; };
+		CB2A2E2125D0C96E00D9FE48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A2E2025D0C96E00D9FE48 /* SceneDelegate.swift */; };
+		CB2A2E2325D0C96E00D9FE48 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A2E2225D0C96E00D9FE48 /* SearchTableViewController.swift */; };
+		CB2A2E2625D0C96E00D9FE48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2A2E2425D0C96E00D9FE48 /* Main.storyboard */; };
+		CB2A2E2825D0C96F00D9FE48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2A2E2725D0C96F00D9FE48 /* Assets.xcassets */; };
+		CB2A2E2B25D0C96F00D9FE48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2A2E2925D0C96F00D9FE48 /* LaunchScreen.storyboard */; };
+		CB997AF625D1B46600ED5869 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB997AF525D1B46600ED5869 /* SearchTableViewCell.swift */; };
+		CB997AFB25D1B84300ED5869 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB997AFA25D1B84300ED5869 /* APIService.swift */; };
+		CBD664AF25D1A16300F6C5B2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CBD664AE25D1A16300F6C5B2 /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		275B19A41758AF3082438106 /* Pods-ios-dca-calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-dca-calculator.release.xcconfig"; path = "Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator.release.xcconfig"; sourceTree = "<group>"; };
+		8913F66C62526211075A4DD8 /* Pods-ios-dca-calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-dca-calculator.debug.xcconfig"; path = "Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		8B5CF22C8596658EA14B554F /* Pods_ios_dca_calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_dca_calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2A2E1B25D0C96E00D9FE48 /* ios-dca-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-dca-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2A2E1E25D0C96E00D9FE48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB2A2E2025D0C96E00D9FE48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CB2A2E2225D0C96E00D9FE48 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		CB2A2E2525D0C96E00D9FE48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB2A2E2725D0C96F00D9FE48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB2A2E2A25D0C96F00D9FE48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB2A2E2C25D0C96F00D9FE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB997AF525D1B46600ED5869 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		CB997AFA25D1B84300ED5869 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CBD664AE25D1A16300F6C5B2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB2A2E1825D0C96E00D9FE48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE3920FB7D240C3FF4A0EA1 /* Pods_ios_dca_calculator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DF31F6792F9E3BEDEA796AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8913F66C62526211075A4DD8 /* Pods-ios-dca-calculator.debug.xcconfig */,
+				275B19A41758AF3082438106 /* Pods-ios-dca-calculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB2A2E1225D0C96E00D9FE48 = {
+			isa = PBXGroup;
+			children = (
+				CBD664AE25D1A16300F6C5B2 /* Podfile */,
+				CB2A2E1D25D0C96E00D9FE48 /* ios-dca-calculator */,
+				CB2A2E1C25D0C96E00D9FE48 /* Products */,
+				7DF31F6792F9E3BEDEA796AA /* Pods */,
+				F93E00FF42578D08B2CE8527 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB2A2E1C25D0C96E00D9FE48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB2A2E1B25D0C96E00D9FE48 /* ios-dca-calculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB2A2E1D25D0C96E00D9FE48 /* ios-dca-calculator */ = {
+			isa = PBXGroup;
+			children = (
+				CB997AF925D1B82500ED5869 /* service */,
+				CB997AF425D1B41700ED5869 /* controller */,
+				CB997AF325D1B40400ED5869 /* view */,
+				CB2A2E1E25D0C96E00D9FE48 /* AppDelegate.swift */,
+				CB2A2E2025D0C96E00D9FE48 /* SceneDelegate.swift */,
+				CB2A2E2425D0C96E00D9FE48 /* Main.storyboard */,
+				CB2A2E2725D0C96F00D9FE48 /* Assets.xcassets */,
+				CB2A2E2925D0C96F00D9FE48 /* LaunchScreen.storyboard */,
+				CB2A2E2C25D0C96F00D9FE48 /* Info.plist */,
+			);
+			path = "ios-dca-calculator";
+			sourceTree = "<group>";
+		};
+		CB997AF325D1B40400ED5869 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CB997AF525D1B46600ED5869 /* SearchTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CB997AF425D1B41700ED5869 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB2A2E2225D0C96E00D9FE48 /* SearchTableViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CB997AF925D1B82500ED5869 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				CB997AFA25D1B84300ED5869 /* APIService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		F93E00FF42578D08B2CE8527 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B5CF22C8596658EA14B554F /* Pods_ios_dca_calculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB2A2E1A25D0C96E00D9FE48 /* ios-dca-calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB2A2E2F25D0C96F00D9FE48 /* Build configuration list for PBXNativeTarget "ios-dca-calculator" */;
+			buildPhases = (
+				680D22AC41657239362CE666 /* [CP] Check Pods Manifest.lock */,
+				CB2A2E1725D0C96E00D9FE48 /* Sources */,
+				CB2A2E1825D0C96E00D9FE48 /* Frameworks */,
+				CB2A2E1925D0C96E00D9FE48 /* Resources */,
+				821D3CF1BE3E4E6775E1D319 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-dca-calculator";
+			productName = "ios-dca-calculator";
+			productReference = CB2A2E1B25D0C96E00D9FE48 /* ios-dca-calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB2A2E1325D0C96E00D9FE48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CB2A2E1A25D0C96E00D9FE48 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = CB2A2E1625D0C96E00D9FE48 /* Build configuration list for PBXProject "ios-dca-calculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB2A2E1225D0C96E00D9FE48;
+			productRefGroup = CB2A2E1C25D0C96E00D9FE48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB2A2E1A25D0C96E00D9FE48 /* ios-dca-calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB2A2E1925D0C96E00D9FE48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2A2E2B25D0C96F00D9FE48 /* LaunchScreen.storyboard in Resources */,
+				CB2A2E2825D0C96F00D9FE48 /* Assets.xcassets in Resources */,
+				CBD664AF25D1A16300F6C5B2 /* Podfile in Resources */,
+				CB2A2E2625D0C96E00D9FE48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		680D22AC41657239362CE666 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-dca-calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		821D3CF1BE3E4E6775E1D319 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-dca-calculator/Pods-ios-dca-calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB2A2E1725D0C96E00D9FE48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2A2E2325D0C96E00D9FE48 /* SearchTableViewController.swift in Sources */,
+				CB997AFB25D1B84300ED5869 /* APIService.swift in Sources */,
+				CB997AF625D1B46600ED5869 /* SearchTableViewCell.swift in Sources */,
+				CB2A2E1F25D0C96E00D9FE48 /* AppDelegate.swift in Sources */,
+				CB2A2E2125D0C96E00D9FE48 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB2A2E2425D0C96E00D9FE48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB2A2E2525D0C96E00D9FE48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB2A2E2925D0C96F00D9FE48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB2A2E2A25D0C96F00D9FE48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB2A2E2D25D0C96F00D9FE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB2A2E2E25D0C96F00D9FE48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB2A2E3025D0C96F00D9FE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8913F66C62526211075A4DD8 /* Pods-ios-dca-calculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DADZ6PC56;
+				INFOPLIST_FILE = "ios-dca-calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.charliebotello.ios-dca-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB2A2E3125D0C96F00D9FE48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 275B19A41758AF3082438106 /* Pods-ios-dca-calculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DADZ6PC56;
+				INFOPLIST_FILE = "ios-dca-calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.charliebotello.ios-dca-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB2A2E1625D0C96E00D9FE48 /* Build configuration list for PBXProject "ios-dca-calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB2A2E2D25D0C96F00D9FE48 /* Debug */,
+				CB2A2E2E25D0C96F00D9FE48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB2A2E2F25D0C96F00D9FE48 /* Build configuration list for PBXNativeTarget "ios-dca-calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB2A2E3025D0C96F00D9FE48 /* Debug */,
+				CB2A2E3125D0C96F00D9FE48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB2A2E1325D0C96E00D9FE48 /* Project object */;
+}
