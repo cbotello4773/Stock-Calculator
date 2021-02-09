@@ -15,7 +15,7 @@ struct SearchResults: Decodable {
     }
 }
 
-struct SearchResult:Decodable {
+struct SearchResult: Decodable {
     let symbol: String
     let name: String
     let type: String
