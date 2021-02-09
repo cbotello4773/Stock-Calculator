@@ -17,6 +17,8 @@
 		CB997AF625D1B46600ED5869 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB997AF525D1B46600ED5869 /* SearchTableViewCell.swift */; };
 		CB997AFB25D1B84300ED5869 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB997AFA25D1B84300ED5869 /* APIService.swift */; };
 		CB997B0025D2074100ED5869 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB997AFF25D2074100ED5869 /* SearchResults.swift */; };
+		CB9BCF0525D2E35300679A65 /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9BCF0425D2E35300679A65 /* SearchPlaceholderView.swift */; };
+		CB9BCF0A25D2F13A00679A65 /* UIAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9BCF0925D2F13A00679A65 /* UIAnimatable.swift */; };
 		CBD664AF25D1A16300F6C5B2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CBD664AE25D1A16300F6C5B2 /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +37,9 @@
 		CB997AF525D1B46600ED5869 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		CB997AFA25D1B84300ED5869 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		CB997AFF25D2074100ED5869 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
-		CBD664AE25D1A16300F6C5B2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		CB9BCF0425D2E35300679A65 /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
+		CB9BCF0925D2F13A00679A65 /* UIAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimatable.swift; sourceTree = "<group>"; };
+		CBD664AE25D1A16300F6C5B2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		CB2A2E1D25D0C96E00D9FE48 /* ios-dca-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				CB9BCF0825D2F11C00679A65 /* protocol */,
 				CB997AFE25D2071F00ED5869 /* model */,
 				CB997AF925D1B82500ED5869 /* service */,
 				CB997AF425D1B41700ED5869 /* controller */,
@@ -99,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				CB997AF525D1B46600ED5869 /* SearchTableViewCell.swift */,
+				CB9BCF0425D2E35300679A65 /* SearchPlaceholderView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				CB997AFF25D2074100ED5869 /* SearchResults.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		CB9BCF0825D2F11C00679A65 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CB9BCF0925D2F13A00679A65 /* UIAnimatable.swift */,
+			);
+			path = protocol;
 			sourceTree = "<group>";
 		};
 		F93E00FF42578D08B2CE8527 /* Frameworks */ = {
@@ -251,11 +265,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB2A2E2325D0C96E00D9FE48 /* SearchTableViewController.swift in Sources */,
+				CB9BCF0A25D2F13A00679A65 /* UIAnimatable.swift in Sources */,
 				CB997AFB25D1B84300ED5869 /* APIService.swift in Sources */,
 				CB997AF625D1B46600ED5869 /* SearchTableViewCell.swift in Sources */,
 				CB2A2E1F25D0C96E00D9FE48 /* AppDelegate.swift in Sources */,
 				CB997B0025D2074100ED5869 /* SearchResults.swift in Sources */,
 				CB2A2E2125D0C96E00D9FE48 /* SceneDelegate.swift in Sources */,
+				CB9BCF0525D2E35300679A65 /* SearchPlaceholderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

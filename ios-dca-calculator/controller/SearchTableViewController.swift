@@ -7,8 +7,9 @@
 
 import UIKit
 import Combine
+import MBProgressHUD
 
-class SearchTableViewController: UITableViewController {
+class SearchTableViewController: UITableViewController, UIAnimatable {
     
     private enum Mode {
         case onboarding
@@ -42,7 +43,10 @@ class SearchTableViewController: UITableViewController {
 
     private func setUpNavigationBar() {
         navigationItem.searchController = searchController
+        navigationItem.title = "Search"
     }
+    
+    
     
     private func setUpTableView() {
         tableView.tableFooterView = UIView()
@@ -51,7 +55,9 @@ class SearchTableViewController: UITableViewController {
     private func observeForm() {
         $searchQuerry.debounce(for: .milliseconds(750), scheduler: RunLoop.main)
             .sink { [unowned self] (searchQuerry) in
+                showLoadingAnimation()
                 self.apiService.fetchSymbolsPublisher(keywords: searchQuerry).sink { (completion) in
+                    hideLoadingAnimation()
                     switch completion {
                     case .failure(let error):
                         print(error.localizedDescription)
@@ -65,9 +71,7 @@ class SearchTableViewController: UITableViewController {
         $mode.sink { [unowned self] (mode) in
             switch mode {
                 case .onboarding:
-                    let redView = UIView()
-                    redView.backgroundColor = .red
-                    self.tableView.backgroundView = redView
+                    self.tableView.backgroundView = SearchPlaceholderView()
                 case .search:
                     self.tableView.backgroundView = nil
                     
