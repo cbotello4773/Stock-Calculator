@@ -23,27 +23,36 @@ class SearchTableViewController: UITableViewController {
     
     private let apiService = APIService()
     private var subscribers = Set<AnyCancellable>()
+    @Published private var searchQuerry = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpNavigationBar()
-        performSearch()
+        observeForm()
+//        performSearch()
     }
 
     private func setUpNavigationBar() {
         navigationItem.searchController = searchController
     }
     
+    private func observeForm() {
+        $searchQuerry.debounce(for: .milliseconds(750), scheduler: RunLoop.main)
+            .sink { [unowned self] (searchQuerry) in
+                self.apiService.fetchSymbolsPublisher(keywords: searchQuerry).sink { (completion) in
+                    switch completion {
+                    case .failure(let error):
+                        print(error.localizedDescription)
+                    case .finished: break
+                    }
+                } receiveValue: { (searchResults) in
+                    print(searchResults)
+                }.store(in: &self.subscribers)
+            }.store(in: &subscribers)
+    }
+    
     private func performSearch() {
-        apiService.fetchSymbolsPublisher(keywords: "S&P500").sink { (completion) in
-            switch completion {
-            case .failure(let error):
-                print(error.localizedDescription)
-            case .finished: break
-            }
-        } receiveValue: { (searchResults) in
-            print(searchResults)
-        }.store(in: &subscribers)
+        
 
     }
     
@@ -60,6 +69,9 @@ class SearchTableViewController: UITableViewController {
 
 extension SearchTableViewController: UISearchResultsUpdating, UISearchControllerDelegate {
     func updateSearchResults(for searchController: UISearchController) {
+        guard let searchQuery = searchController.searchBar.text, !searchQuery.isEmpty else { return }
+        self.searchQuerry = searchQuery
+        print(searchQuery)
         
     }
 
