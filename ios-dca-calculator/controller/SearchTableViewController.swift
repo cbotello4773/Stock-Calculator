@@ -98,13 +98,14 @@ class SearchTableViewController: UITableViewController, UIAnimatable {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let searchResults = self.searchResults {
-            let symbol = searchResults.items[indexPath.item].symbol
-            handleSelection(for: symbol)
+            let searchResult = searchResults.items[indexPath.item]
+            let symbol = searchResult.symbol
+            handleSelection(for: symbol, searchResult: searchResult)
         }
         
     }
     
-    private func handleSelection(for symbol: String) {
+    private func handleSelection(for symbol: String, searchResult: SearchResult) {
         apiService.fetchTimeSeriesMonthlyAdjustedPublisher(keywords: symbol).sink { (completionResult) in
             switch completionResult {
             case .failure(let error):
@@ -113,13 +114,22 @@ class SearchTableViewController: UITableViewController, UIAnimatable {
                 break
             }
         } receiveValue: { (timeSeriesMonthlyAdjusted) in
-            print("success: \(timeSeriesMonthlyAdjusted)")
+            let asset = Asset(searchResult: searchResult, timeSeriesMonthlyAdjusted: timeSeriesMonthlyAdjusted)
+            self.performSegue(withIdentifier: "showCalculator", sender: asset)
+            print("success: \(timeSeriesMonthlyAdjusted.getMonthInfos())")
         }.store(in: &subscribers)
 
         
-//        performSegue(withIdentifier: "showCalculator", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showCalculator",
+           let destination = segue.destination as? CalculatorTableViewController,
+           let asset = sender as? Asset {
+            destination.asset = asset
+        }
     }
 }
+
 
 
 extension SearchTableViewController: UISearchResultsUpdating, UISearchControllerDelegate {
