@@ -22,6 +22,7 @@
 		CB9BCF0D25D3515700679A65 /* TimeSeriesMonthlyAdjusted.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9BCF0C25D3515700679A65 /* TimeSeriesMonthlyAdjusted.swift */; };
 		CB9BCF1025D392D300679A65 /* CalculatorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9BCF0F25D392D300679A65 /* CalculatorTableViewController.swift */; };
 		CB9BCF1425D3945C00679A65 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9BCF1325D3945C00679A65 /* Asset.swift */; };
+		CB9BCF1825D39C4300679A65 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9BCF1725D39C4300679A65 /* String+Extensions.swift */; };
 		CBD664AF25D1A16300F6C5B2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CBD664AE25D1A16300F6C5B2 /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		CB9BCF0C25D3515700679A65 /* TimeSeriesMonthlyAdjusted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesMonthlyAdjusted.swift; sourceTree = "<group>"; };
 		CB9BCF0F25D392D300679A65 /* CalculatorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTableViewController.swift; sourceTree = "<group>"; };
 		CB9BCF1325D3945C00679A65 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		CB9BCF1725D39C4300679A65 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		CBD664AE25D1A16300F6C5B2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 		CB2A2E1D25D0C96E00D9FE48 /* ios-dca-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				CB9BCF1625D39C2800679A65 /* extensions */,
 				CB9BCF0825D2F11C00679A65 /* protocol */,
 				CB997AFE25D2071F00ED5869 /* model */,
 				CB997AF925D1B82500ED5869 /* service */,
@@ -148,6 +151,14 @@
 				CB9BCF0925D2F13A00679A65 /* UIAnimatable.swift */,
 			);
 			path = protocol;
+			sourceTree = "<group>";
+		};
+		CB9BCF1625D39C2800679A65 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB9BCF1725D39C4300679A65 /* String+Extensions.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		F93E00FF42578D08B2CE8527 /* Frameworks */ = {
@@ -277,6 +288,7 @@
 				CB9BCF1025D392D300679A65 /* CalculatorTableViewController.swift in Sources */,
 				CB9BCF0A25D2F13A00679A65 /* UIAnimatable.swift in Sources */,
 				CB9BCF1425D3945C00679A65 /* Asset.swift in Sources */,
+				CB9BCF1825D39C4300679A65 /* String+Extensions.swift in Sources */,
 				CB997AFB25D1B84300ED5869 /* APIService.swift in Sources */,
 				CB997AF625D1B46600ED5869 /* SearchTableViewCell.swift in Sources */,
 				CB2A2E1F25D0C96E00D9FE48 /* AppDelegate.swift in Sources */,
